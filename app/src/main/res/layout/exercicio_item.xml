@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="txtNome"
+            android:textSize="25sp" />
+
+        <TextView
+                android:id="@+id/txtPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtDescricao"
+                android:layout_below="@+id/txtDescricao"
+                android:text="txtPeso" android:layout_alignLeft="@+id/txtDescricao"/>
+
+        <TextView
+                android:id="@+id/txtRepeticao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtPeso"
+                android:layout_below="@+id/txtPeso"
+                android:text="txtPeso" android:layout_alignLeft="@+id/txtPeso"/>
+
+        <Button
+            android:id="@+id/deleteBt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/trashcan"/>
+
+        <Button
+            android:id="@+id/editBt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/pencil"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

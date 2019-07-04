@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Descrição" />
+
+    <EditText
+            android:id="@+id/txtDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/descricao"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="3dp"
+            android:hint=" Descreva o exercício" android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDescricao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="Repetições" />
+
+    <Spinner
+            android:id="@+id/txtSerie"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:textSize="12sp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView8"
+            android:entries="@array/array_serie"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="350dp"
+            android:layout_marginTop="3dp" android:layout_alignParentLeft="true"/>
+
+    <Spinner
+            android:id="@+id/txtRepeticao"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:textSize="12sp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView8"
+            android:layout_marginLeft="360dp"
+            android:entries="@array/array_repeticao"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="3dp" android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/textX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="X" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRepeticao"
+        android:layout_centerHorizontal="true"
+        android:text="Peso" />
+
+    <EditText
+            android:id="@+id/txtPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView9"
+            android:ems="10"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:inputType="number"
+            android:hint=" Digite a quantidade de peso" android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/btSalvar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/txtPeso"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/textView9"
+        android:layout_toRightOf="@+id/textView9"
+        android:background="@drawable/checked" />
+
+    <Button
+        android:id="@+id/cancelarBt"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/txtPeso"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/textView9"
+        android:layout_toLeftOf="@+id/textView9"
+        android:background="@drawable/x" />
+</RelativeLayout>
